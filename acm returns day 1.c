@@ -14,12 +14,12 @@ void input(struct emp *q)
     {
         printf("enter name,emp id,age of emp %d\n",i);
         scanf("%s", &q[i].name);
-        scanf("%d %d",&q->empid,&q->age);
+        scanf("%d %d",&q->empid, &q->age);
         q++;
     }
 }
 
-void main(void)
+int main(void)
 {
     int i;
     struct emp em[10];
@@ -31,4 +31,5 @@ void main(void)
 
         printf("%s %d %d",em[i].name,em[i].empid,em[i].age);
     }
+return 0;
 }
